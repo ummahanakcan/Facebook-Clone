@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>Facebook Clone</title>
+  </head>
+  <body class="">
+    <nav>
+      <div class="nav-left">
+        <img src="images/logo.png" class="logo" />
+        <ul>
+          <li><i class="fa-regular fa-bell"></i></li>
+          <li><i class="fa-regular fa-envelope"></i></li>
+          <li><i class="fa-solid fa-camera-retro"></i></li>
+        </ul>
+      </div>
+
+      <div class="nav-right">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+          <img src="images/profile-pic.png" />
+        </div>
+      </div>
+
+      <div class="settings-menu">
+        <div id="dark-btn">
+          <span></span>
+        </div>
+
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="images/profile-pic.png" />
+            <div>
+              <p>Micky Ronald</p>
+              <a href="#">See your profile</a>
+            </div>
+          </div>
+          <hr />
+          <div class="user-profile">
+            <img src="images/feedback.png" />
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to improve new design</a>
+            </div>
+          </div>
+          <hr />
+          <div class="setting-links">
+            <img src="images/setting.png" class="settings-icon" />
+            <a href="#"
+              >Settings and privacy <img src="images/arrow.png" width=".8rem"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="images/help.png" class="settings-icon" />
+            <a href="#"
+              >Help and Support <img src="images/arrow.png" width=".8rem"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="images/display.png" class="settings-icon" />
+            <a href="#"
+              >Display & Accessibility
+              <img src="images/arrow.png" width=".8rem"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="images/logout.png" class="settings-icon" />
+            <a href="#">Logout <img src="images/arrow.png" width=".8rem" /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!------------ left-sidebar  ----------->
+      <div class="left-sidebar">
+        <div class="imp-links">
+          <a href="#"><i class="fa-solid fa-newspaper"></i> Latest News</a>
+          <a href="#"><i class="fa-solid fa-user-group"></i> Friends</a>
+          <a href="#"><i class="fa-solid fa-people-group"></i> Group</a>
+          <a href="#"><i class="fa-solid fa-shop"></i>Marketplace</a>
+          <a href="#"><i class="fa-solid fa-tv"></i>Watch</a>
+          <a href="#">See More</a>
+        </div>
+        <div class="shortcut-links">
+          <p>Your Shortcut</p>
+          <a href="#"
+            ><img src="images/shortcut-1.png" alt="" />Web Developers</a
+          >
+          <a href="#"
+            ><img src="images/shortcut-2.png" alt="" />Web Design Course</a
+          >
+          <a href="#"
+            ><img src="images/shortcut-3.png" alt="" />Full Stack Development</a
+          >
+          <a href="#"
+            ><img src="images/shortcut-4.png" alt="" />Website Experts</a
+          >
+        </div>
+      </div>
+      <!------------ main-content  ----------->
+      <div class="main-content">
+        <div class="story">
+          <div class="story-gallery story1">
+            <div class="plus">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <p>Post Story</p>
+          </div>
+          <div class="story-gallery story2">
+            <img src="images/member-1.png" />
+            <p>Jessy</p>
+          </div>
+          <div class="story-gallery story3">
+            <img src="images/member-4.png" />
+            <p>Donald</p>
+          </div>
+          <div class="story-gallery story4">
+            <img src="images/member-2.png" />
+            <p>Peter</p>
+          </div>
+          <div class="story-gallery story5">
+            <img src="images/member-3.png" />
+            <p>Ivana</p>
+          </div>
+        </div>
+        <div class="write-post-container">
+          <div class="user-profile">
+            <img src="images/profile-pic.png" />
+            <div>
+              <p>Micky Ronald</p>
+              <small>Public <i class="fa-solid fa-caret-down"></i></small>
+            </div>
+          </div>
+          <div class="post-input-container">
+            <textarea
+              rows="3"
+              placeholder="What's on your mind, Micky? "
+            ></textarea>
+            <!-- Eğer burada textarea etiketini ayrı yazarsak
+            <textarea
+              rows="3"
+              placeholder="What's on your mind, Micky? "
+            >
+          </textarea>
+          şeklinde bu durumda placeholder ekrana yazılmaz. -->
+            <div class="add-post-links">
+              <a href="#"><img src="images/live-video.png" /> Live Video</a>
+              <a href="#"><img src="images/photo.png" /> Photo Video</a>
+              <a href="#"><img src="images/feeling.png" /> Feeling/Activity</a>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" />
+              <div>
+                <p>Micky Ronald</p>
+                <span>April 10 2024, 13:30 pm</span>
+              </div>
+            </div>
+            <a href="#"> <i class="fa-solid fa-ellipsis-v"></i></a>
+          </div>
+
+          <p class="post-text">
+            Lorem ipsum dolor, <span>sit amet consectetur</span> adipisicing
+            elit. Ducimus illo inventore commodi cupiditate tempora sequi
+            laboriosam tempore pariatur officia id?
+            <a href="#">#Lorem, ipsum. </a> <a href="#">#cupiditate tempora </a>
+          </p>
+          <img src="images/feed-image-1.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><i class="fa-solid fa-thumbs-up"></i> 120</div>
+              <div><img src="images/comments.png" />98</div>
+              <div><img src="images/share.png" />15</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" />
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" />
+              <div>
+                <p>Micky Ronald</p>
+                <span>December 21 2023, 13:30 pm</span>
+              </div>
+            </div>
+            <a href="#"> <i class="fa-solid fa-ellipsis-v"></i></a>
+          </div>
+
+          <p class="post-text">
+            Lorem ipsum dolor, <span>sit amet consectetur</span> adipisicing
+            elit. Ducimus illo inventore commodi cupiditate tempora sequi
+            laboriosam tempore pariatur officia id?
+            <a href="#">#Lorem, ipsum. </a> <a href="#">#cupiditate tempora </a>
+          </p>
+          <img src="images/feed-image-2.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><i class="fa-solid fa-thumbs-up"></i> 141</div>
+              <div><img src="images/comments.png" />28</div>
+              <div><img src="images/share.png" />153</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" />
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" />
+              <div>
+                <p>Micky Ronald</p>
+                <span>April 10 2024, 13:30 pm</span>
+              </div>
+            </div>
+            <a href="#"> <i class="fa-solid fa-ellipsis-v"></i></a>
+          </div>
+
+          <p class="post-text">
+            Lorem ipsum dolor, <span>sit amet consectetur</span> adipisicing
+            elit. Ducimus illo inventore commodi cupiditate tempora sequi
+            laboriosam tempore pariatur officia id?
+            <a href="#">#Lorem, ipsum. </a> <a href="#">#cupiditate tempora </a>
+          </p>
+          <img src="images/feed-image-3.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><i class="fa-solid fa-thumbs-up"></i> 120</div>
+              <div><img src="images/comments.png" />98</div>
+              <div><img src="images/share.png" />15</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" />
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" />
+              <div>
+                <p>Micky Ronald</p>
+                <span>April 10 2024, 13:30 pm</span>
+              </div>
+            </div>
+            <a href="#"> <i class="fa-solid fa-ellipsis-v"></i></a>
+          </div>
+
+          <p class="post-text">
+            Lorem ipsum dolor, <span>sit amet consectetur</span> adipisicing
+            elit. Ducimus illo inventore commodi cupiditate tempora sequi
+            laboriosam tempore pariatur officia id?
+            <a href="#">#Lorem, ipsum. </a> <a href="#">#cupiditate tempora </a>
+          </p>
+          <img src="images/feed-image-4.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><i class="fa-solid fa-thumbs-up"></i> 120</div>
+              <div><img src="images/comments.png" />98</div>
+              <div><img src="images/share.png" />15</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" />
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" />
+              <div>
+                <p>Micky Ronald</p>
+                <span>April 10 2024, 13:30 pm</span>
+              </div>
+            </div>
+            <a href="#"> <i class="fa-solid fa-ellipsis-v"></i></a>
+          </div>
+
+          <p class="post-text">
+            Lorem ipsum dolor, <span>sit amet consectetur</span> adipisicing
+            elit. Ducimus illo inventore commodi cupiditate tempora sequi
+            laboriosam tempore pariatur officia id?
+            <a href="#">#Lorem, ipsum. </a> <a href="#">#cupiditate tempora </a>
+          </p>
+          <img src="images/feed-image-5.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><i class="fa-solid fa-thumbs-up"></i> 120</div>
+              <div><img src="images/comments.png" />98</div>
+              <div><img src="images/share.png" />15</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" />
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="load-more-btn">Load More</button>
+      </div>
+
+      <!------------ right-sidebar  ----------->
+      <div class="right-sidebar">
+        <div class="sidebar-title">
+          <h4>Events</h4>
+          <a href="#">See all</a>
+        </div>
+        <div class="event">
+          <div class="event-left">
+            <h3>18</h3>
+            <span>May</span>
+          </div>
+          <div class="event-right">
+            <h4>Social Media</h4>
+            <p><i class="fa-solid fa-location-dot"></i> Wilson Park</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-left">
+            <h3>29</h3>
+            <span>June</span>
+          </div>
+          <div class="event-right">
+            <h4>Mobile Marketing</h4>
+            <p><i class="fa-solid fa-location-dot"></i> Wilson Park</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+        <div class="sidebar-title">
+          <h4>Advertisement</h4>
+          <a href="#">Close</a>
+        </div>
+        <img src="images/advertisement.png" class="sidebar-ads" />
+        <div class="sidebar-title">
+          <h4>Conversation</h4>
+          <a href="#">Hide Chat</a>
+        </div>
+        <div class="online-list">
+          <div class="online">
+            <img src="images/member-1.png" />
+          </div>
+          <p>Jessy Niky</p>
+        </div>
+        <div class="online-list">
+          <div class="online">
+            <img src="images/member-2.png" />
+          </div>
+          <p>Rich Brace</p>
+        </div>
+        <div class="online-list">
+          <div class="online">
+            <img src="images/member-3.png" />
+          </div>
+          <p>Melly Dust</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Copyright © -2024</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
