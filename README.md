@@ -1,5 +1,5 @@
 # Facebook Clone
-[Demo](https://ummahanakcanfacebookclone.netlify.app/)
+[Demo](https://ummahanakcanfacebook.netlify.app/)
 
 ![image](images/facebookclone.png)
 
